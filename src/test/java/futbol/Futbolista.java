@@ -12,7 +12,7 @@ public abstract class Futbolista implements Comparable<Futbolista> {
 	}
 	
 	public Futbolista() {
-		this("Maradona",30,"Delantero");
+		this("Maradona",30,"delantero");
 	}
 	
 	public String toString() {
@@ -30,7 +30,7 @@ public abstract class Futbolista implements Comparable<Futbolista> {
 	
 	}
 	
-	public abstract boolean jugarConLasManos(Futbolista f);
+	public abstract boolean jugarConLasManos();
 	
 	
 	

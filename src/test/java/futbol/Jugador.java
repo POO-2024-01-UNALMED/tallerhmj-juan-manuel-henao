@@ -28,11 +28,11 @@ public class Jugador extends Futbolista {
     }
 	
 	public String toString() {
-		return "El futbolista" + this.getNombre() + "tiene" + this.getEdad() + ", y juega de" + this.getPosicion() + "con el dorsal"+ dorsal+ ". Ha marcado"+golesMarcados;
+		return "El futbolista " + this.getNombre() + " tiene " + this.getEdad() + ", y juega de " + this.getPosicion() + " con el dorsal "+ dorsal+ ". Ha marcado "+golesMarcados;
 	}
 	
-	public boolean jugarConLasManos(Futbolista f) {
-		if(f.getClass().getName()=="Portero") {
+	public boolean jugarConLasManos() {
+		if(this.getClass().getSimpleName().equals("Portero")) {
 			return true;
 		}
 		else {
